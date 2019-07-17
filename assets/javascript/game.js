@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    $("#rulesBtn").on("click",function(){
+        
+    });
 
 
 
@@ -7,5 +10,6 @@ $(document).ready(function(){
 
 
 
-    
+
+
 });
