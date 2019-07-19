@@ -2,3 +2,43 @@ div.card {
     width: 30rem;
     margin: auto;
 }
+body {
+    background-image: url(../images/photo-1451187580459-43490279c0fa.jpeg);
+    margin: 0;
+
+    
+}
+div.jumbotron {
+    opacity: 0.8;
+    color: white;
+    background-color: transparent !important;
+    border: 3px solid white;
+}
+img {
+    opacity: 0.95;
+}
+li {
+    color: black;
+}
+
+h1 {
+    border-bottom: 3px solid white;
+    
+}
+
+#wins {
+    border: 3px solid white;
+    font-size: 2rem;
+}
+#losses {
+    border: 3px solid white;
+    font-size: 2rem;
+}
+#targetScore {
+    border: 3px solid white;
+    font-size: 2rem;
+}
+#yourScore {
+    border: 3px solid white;
+    font-size: 2rem;
+}
