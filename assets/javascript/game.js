@@ -5,8 +5,12 @@ let crystalTwoValue = 0;
 let crystalThreeValue = 0;
 let crystalFourValue = 0;
 let yourScore = 0;
+let targetScore = 0;
 
-
+function resetGame() {
+    yourScore = 0;
+    targetScore = Math.floor((Math.random() * (100-12) + 12));
+}
 
 
 
@@ -24,47 +28,31 @@ $(document).ready(function(){
 
 
     $("#crystalOne").on("click", function(){
-        $("#yourScore").html("Your score : " + crystalOneValue);
+        let newValue = yourScore += crystalOneValue;
+        $("#yourScore").html("Your score : " + newValue);
         
-        
-
     });
 
     $("#crystalTwo").on("click", function(){
-        $("#yourScore").html("Your score : " + crystalTwoValue);
-        
-        
+        let newValue = yourScore += crystalTwoValue;
+        $("#yourScore").html("Your score : " + newValue);
 
     });
 
     $("#crystalThree").on("click", function(){
-        $("#yourScore").html("Your score : " + crystalThreeValue);
-        
-        
+        let newValue = yourScore += crystalThreeValue;
+        $("#yourScore").html("Your score : " + newValue);
 
     });
 
     $("#crystalFour").on("click", function(){
-        $("#yourScore").html("Your score : " + crystalFourValue);
-        
-        
+        let newValue = yourScore += crystalFourValue;
+        $("#yourScore").html("Your score : " + newValue);
 
     });
 
-
-
-    $("#wins").html("Wins : " + wins);
-    $("#losses").html("Losses : " + losses);
-    $("#targetScore").html("Target Score : " + targetScore);
-    
-    
-
-
-
-
-
-
-
-
+        $("#wins").html("Wins : " + wins);
+        $("#losses").html("Losses : " + losses);
+        $("#targetScore").html("Target Score : " + targetScore);
 
 });
